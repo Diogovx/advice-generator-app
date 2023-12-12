@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    font-size: 60%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--Dark-Blue);
+}
+main{
+    width: 100%;
+    max-height: 100rem;
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Dark-Grayish-Blue);
+    margin: 1rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+}
+main h1{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+main p{
+    color: var(--Light-Cyan);
+}
+main img:nth-child(4){
+    display: none;
+    margin: 3rem 0;
+}
+main img:nth-child(3){
+    margin: 3rem 0;
+}
+
+main button{
+    position: absolute;
+    bottom: -2.7rem;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Neon-Green);
+    padding: 3rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main button:hover{
+    box-shadow: 0px 0px 2rem var(--Neon-Green);
+}
+
+@media(min-width: 1440px){
+    :root{
+        font-size: 12px;
+    }
+    main{
+        max-width: 25%;
+    }
+    main button{
+        padding: 3rem;
+    }
+    main button img{
+        height: 2.5rem;
+    }
+    main img:nth-child(4){
+        display: block;
+        width: 100%;
+    }
+    main img:nth-child(3){
+        display: none;
+    }
+}
